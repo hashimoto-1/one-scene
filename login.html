@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ログイン.css">
+    <title>page</title>
+</head>
+<body>
+
+<style type="text/css">
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background: #ddd0be;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    background: #ddd0be;
+    border-radius: 10px;
+}
+
+h1 a{
+    position: relative;
+    top: 20px;
+    left: 10%;
+    color: white;
+    text-decoration: underline;
+    font-size: 4rem;
+}
+
+.center h2{
+    color:white;
+    text-align: center;
+    padding: 0 0 20px 0;
+    font-size: 40px;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: white;
+    outline: none;
+    border-radius: 10px;
+}
+
+.pass a{
+    margin: -5px 0 10px 5px;
+    color: white;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    position: absolute;
+    left: 150px;
+    width: 50%;
+    height: 50px;
+    border: 1px solid;
+    background: #8c52ff;
+    border-radius: 9px;
+    font-size: 18px;
+    color: #e9f4fb;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+p a {
+    position: relative;
+    top: 500px;
+    left: 4%;
+    background: #ddd0be;
+    text-decoration: underline;
+    color: white;
+    font-size: 25px;
+    outline: none;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+</style>
+
+    
+    <h1><a href="homepage.html">One scene</a></h1>
+    <div class="center">
+        <h2>ログイン</h2>
+        <form method="post">
+            <div class="txt_field">
+                <input id="text" type="text" name="user_name" placeholder="メールアドレス" required>
+            </div>
+            <div class="txt_field">
+                <input id="text" type="password" name="password" placeholder="パスワード" required>
+            </div>
+            <div class="pass"><a href="/">パスワード再設定</a></div>
+            <div>
+                <input id="button" type="submit" value="ログイン">
+            </div>
+        </form>
+    </div>
+       <p><a href="homepage.html"> ◃もどる</a></p>      
+</body>
+</html>
